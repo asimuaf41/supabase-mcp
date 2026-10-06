@@ -1,0 +1,31 @@
+{
+  "name": "supabase-mcp",
+  "version": "1.0.0",
+  "description": "MCP server giving Claude Code direct access to query and manage a Supabase database.",
+  "type": "module",
+  "main": "supabase-mcp.js",
+  "scripts": {
+    "start": "node supabase-mcp.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@supabase/supabase-js": "^2.117.2",
+    "dotenv": "^18.0.5",
+    "zod": "^4.6.5"
+  },
+  "bin": {
+    "supabase-mcp": "supabase-mcp.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "supabase",
+    "claude-code",
+    "model-context-protocol"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}
